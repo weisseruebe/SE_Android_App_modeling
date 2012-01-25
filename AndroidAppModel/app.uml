@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:profile="http:///schemas/profile/_labIsEHkEeGAXfaoLuzzwg/9" xmlns:profile_1="http:///schemas/profile/_FwEg0ELWEeGJMPMvOhQvkg/19" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/profile/_labIsEHkEeGAXfaoLuzzwg/9 file:/C:/Program%20Files%20(x86)/eclipse/workspace/SWE_Android/AndroidProfile/android.profile.uml#_labIsUHkEeGAXfaoLuzzwg http:///schemas/profile/_FwEg0ELWEeGJMPMvOhQvkg/19 ../AndroidProfile/android.profile.uml#_FwEg0ULWEeGJMPMvOhQvkg">
+  <uml:Model xmi:id="_W94yMEHaEeGAXfaoLuzzwg" name="test/model">
+    <packagedElement xmi:type="uml:Class" xmi:id="_xuILcEHjEeGAXfaoLuzzwg" name="EditPoiActivity">
+      <ownedAttribute xmi:id="_-6ebgEHkEeGAXfaoLuzzwg" name="btnSavePos" type="_5TIN8EHjEeGAXfaoLuzzwg" aggregation="composite" association="_-6fpoEHkEeGAXfaoLuzzwg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-6ebgUHkEeGAXfaoLuzzwg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-6ebgkHkEeGAXfaoLuzzwg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ny_tIEHlEeGAXfaoLuzzwg" name="testProperty1" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_o0CTYEHlEeGAXfaoLuzzwg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_o0AeMEHlEeGAXfaoLuzzwg" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_o0CTYUHlEeGAXfaoLuzzwg">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_rhWFYEdPEeGaFc2GM-Tk7w" name="testBTN" type="_oT5R8EdPEeGaFc2GM-Tk7w" aggregation="composite" association="_rhWFY0dPEeGaFc2GM-Tk7w">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rhWFYUdPEeGaFc2GM-Tk7w" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rhWFYkdPEeGaFc2GM-Tk7w" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_jlE7MEHlEeGAXfaoLuzzwg" name="testOperation1"/>
+      <ownedOperation xmi:id="_lHCdMEHlEeGAXfaoLuzzwg" name="testOperation2" visibility="private"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_5TIN8EHjEeGAXfaoLuzzwg" name="btnSavePos">
+      <ownedAttribute xmi:id="_CcsagEHkEeGAXfaoLuzzwg" name="poiName" visibility="public">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DKCosUHkEeGAXfaoLuzzwg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DKCosEHkEeGAXfaoLuzzwg" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_DKCoskHkEeGAXfaoLuzzwg">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_2BmWUEHkEeGAXfaoLuzzwg" name="poiDesc" visibility="public">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2o3KoUHkEeGAXfaoLuzzwg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2o3KoEHkEeGAXfaoLuzzwg" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_2o3KokHkEeGAXfaoLuzzwg">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FxjDUELdEeGYJPg1Jf5l1w" name="testPropertyBtn1" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G8P74ELdEeGYJPg1Jf5l1w" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G8OGsELdEeGYJPg1Jf5l1w" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_G8P74ULdEeGYJPg1Jf5l1w">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-6fpoEHkEeGAXfaoLuzzwg" name="editPoiActivity_btnSavePos_0" memberEnd="_-6fpoUHkEeGAXfaoLuzzwg _-6ebgEHkEeGAXfaoLuzzwg">
+      <ownedEnd xmi:id="_-6fpoUHkEeGAXfaoLuzzwg" name="editPoiActivity" type="_xuILcEHjEeGAXfaoLuzzwg" association="_-6fpoEHkEeGAXfaoLuzzwg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-6fpokHkEeGAXfaoLuzzwg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-6fpo0HkEeGAXfaoLuzzwg" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Z5RIsEKfEeGlK4YA9aWjZw" name="Manifest"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_hGHUcEKgEeGlK4YA9aWjZw" name="StartingActivity"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_JlK4MELYEeGYJPg1Jf5l1w" name="standardClass">
+      <ownedAttribute xmi:id="_HjKK4ELdEeGYJPg1Jf5l1w" name="testPropertyStandard1" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EChar"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_In_E8ULdEeGYJPg1Jf5l1w" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_In_E8ELdEeGYJPg1Jf5l1w" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_IoA6IELdEeGYJPg1Jf5l1w">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_oT5R8EdPEeGaFc2GM-Tk7w" name="testBTN"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_rhWFY0dPEeGaFc2GM-Tk7w" name="editPoiActivity_testBTN_0" memberEnd="_rhWFZEdPEeGaFc2GM-Tk7w _rhWFYEdPEeGaFc2GM-Tk7w">
+      <ownedEnd xmi:id="_rhWFZEdPEeGaFc2GM-Tk7w" name="editPoiActivity" type="_xuILcEHjEeGAXfaoLuzzwg" association="_rhWFY0dPEeGaFc2GM-Tk7w">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rhWFZUdPEeGaFc2GM-Tk7w" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rhWFZkdPEeGaFc2GM-Tk7w" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <profileApplication xmi:id="_bEKwkELWEeGYJPg1Jf5l1w">
+      <eAnnotations xmi:id="_bEVIoELWEeGYJPg1Jf5l1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="../AndroidProfile/android.profile.uml#_FwEg0ULWEeGJMPMvOhQvkg"/>
+      </eAnnotations>
+      <appliedProfile href="../AndroidProfile/android.profile.uml#_jk3WQEHZEeGAXfaoLuzzwg"/>
+    </profileApplication>
+  </uml:Model>
+  <profile:Activity xmi:id="_43bJYEHjEeGAXfaoLuzzwg" base_Class="_xuILcEHjEeGAXfaoLuzzwg"/>
+  <profile:Button xmi:id="_8Y2BsEHjEeGAXfaoLuzzwg" base_Class="_5TIN8EHjEeGAXfaoLuzzwg" XMLInstance="btnSavePosID"/>
+  <profile:EditText xmi:id="_yBCD4EHkEeGAXfaoLuzzwg" XMLInstance="poiNameID" base_Property="_CcsagEHkEeGAXfaoLuzzwg"/>
+  <profile:EditText xmi:id="_3LunIEHkEeGAXfaoLuzzwg" XMLInstance="poiDescID" base_Property="_2BmWUEHkEeGAXfaoLuzzwg"/>
+  <profile:Intent xmi:id="_A1uAMEHlEeGAXfaoLuzzwg" base_Association="_-6fpoEHkEeGAXfaoLuzzwg" startForResult="true"/>
+  <profile_1:AndroidManifestXML xmi:id="_cBwaMELWEeGYJPg1Jf5l1w" INTERNET="true" ACCESS_FINE_LOCATION="true" ACCESS_COARSE_LOCATION="true" ACCESS_LOCATION_EXTRA_COMMANDS="true" base_Class="_Z5RIsEKfEeGlK4YA9aWjZw" min_SDK="8" MainActivity="_hGHUcEKgEeGlK4YA9aWjZw" showTitleBar="false" useGoogleMapsLibrary="true"/>
+  <profile_1:Activity xmi:id="_lFSQMELWEeGYJPg1Jf5l1w" base_Class="_hGHUcEKgEeGlK4YA9aWjZw"/>
+  <profile_1:Activity xmi:id="_lsMfMELWEeGYJPg1Jf5l1w" base_Class="_xuILcEHjEeGAXfaoLuzzwg"/>
+  <profile_1:Button xmi:id="_naRxoELWEeGYJPg1Jf5l1w" base_Class="_5TIN8EHjEeGAXfaoLuzzwg"/>
+  <profile_1:EditText xmi:id="_ox2okELWEeGYJPg1Jf5l1w" base_Property="_CcsagEHkEeGAXfaoLuzzwg"/>
+  <profile_1:EditText xmi:id="_pVvYwELWEeGYJPg1Jf5l1w" base_Property="_2BmWUEHkEeGAXfaoLuzzwg"/>
+  <profile_1:Button xmi:id="_q6uKQEdPEeGaFc2GM-Tk7w" base_Class="_oT5R8EdPEeGaFc2GM-Tk7w" initOnClickListener="false"/>
+</xmi:XMI>

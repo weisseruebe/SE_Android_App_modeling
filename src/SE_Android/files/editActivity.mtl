@@ -97,6 +97,11 @@ public class [c.name/]Activity extends Activity {
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 [for (p:Property | c.attribute )]
+	<TextView
+        android:id="@+id/label[c.name.toUpperFirst()/][p.name.toUpperFirst()/]"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="[p.name.toUpperFirst()/]" />
     <EditText
         android:id="@+id/[c.name.toLowerFirst()/][p.name/]"
         android:layout_width="match_parent"

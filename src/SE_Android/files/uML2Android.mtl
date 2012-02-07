@@ -5,6 +5,7 @@
 [import activity /]
 [import javaclass /]
 [import folder /]
+[import filelistactivity/]
 
 [template public uML2Android(p : Package)]
 	[comment @main /]
@@ -12,11 +13,13 @@
 
 		[comment TODO: Bessere Methode zum Abfragen einer Activity finden. SuperStereotype? query in androidmanifest? /]
 		[if c.getAppliedStereotype('profile::Activity') <> null or
-			c.getAppliedStereotype('profile::ListActivity') <> null or
 			c.getAppliedStereotype('profile::PreferenceActivity') <> null or
 			c.getAppliedStereotype('profile::MapActivity') <> null]
 			[activity(c)/]
-			[layoutfile(c) /]
+			[layoutfile(c)/]
+		
+		[elseif c.getAppliedStereotype('profile::ListActivity') <> null] 
+			[filelistactivity(c)/]
 
 		[comment   AndroidManifest.xml /]
 		[elseif c.getAppliedStereotype('profile::AndroidManifestXML') <> null]

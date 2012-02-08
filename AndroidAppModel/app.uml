@@ -70,6 +70,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rhWFZkdPEeGaFc2GM-Tk7w" value="1"/>
       </ownedEnd>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_cM2EUFGGEeGkNOOhy6FStA" name="FileListActivity"/>
     <profileApplication xmi:id="_bEKwkELWEeGYJPg1Jf5l1w">
       <eAnnotations xmi:id="_bEVIoELWEeGYJPg1Jf5l1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="../AndroidProfile/android.profile.uml#_FwEg0ULWEeGJMPMvOhQvkg"/>
@@ -89,4 +90,5 @@
   <profile_1:EditText xmi:id="_ox2okELWEeGYJPg1Jf5l1w" base_Property="_CcsagEHkEeGAXfaoLuzzwg"/>
   <profile_1:EditText xmi:id="_pVvYwELWEeGYJPg1Jf5l1w" base_Property="_2BmWUEHkEeGAXfaoLuzzwg"/>
   <profile_1:Button xmi:id="_q6uKQEdPEeGaFc2GM-Tk7w" base_Class="_oT5R8EdPEeGaFc2GM-Tk7w" initOnClickListener="false"/>
+  <profile_1:ListActivity xmi:id="_iAkWcFGGEeGkNOOhy6FStA" base_Class="_cM2EUFGGEeGkNOOhy6FStA"/>
 </xmi:XMI>

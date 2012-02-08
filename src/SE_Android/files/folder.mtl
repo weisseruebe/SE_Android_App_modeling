@@ -19,7 +19,6 @@
 [/template]
 
 
-
 [template public stringsfile(p : Package) ]
 [for (c : Class | p.ownedElement -> select(e:Element | e.oclIsKindOf(Class)))]
 	[if (c.getAppliedStereotype('profile::AndroidManifestXML') <> null)]
@@ -37,9 +36,9 @@
 
 
 [template public copyImageFile() ]
-	[copyImageFile('C:/Program Files (x86)/eclipse/workspace/SE_Android/src/SE_Android/files/','C:/Program Files (x86)/eclipse/workspace/SE_Android/src_gen/res/drawable-hdpi/', 'ic_launcher_h.png') /]
-	[copyImageFile('C:/Program Files (x86)/eclipse/workspace/SE_Android/src/SE_Android/files/','C:/Program Files (x86)/eclipse/workspace/SE_Android/src_gen/res/drawable-ldpi/', 'ic_launcher_l.png') /]
-	[copyImageFile('C:/Program Files (x86)/eclipse/workspace/SE_Android/src/SE_Android/files/','C:/Program Files (x86)/eclipse/workspace/SE_Android/src_gen/res/drawable-mdpi/', 'ic_launcher_m.png') /]
+	[comment copyImageFile('C:/Program Files (x86)/eclipse/workspace/SE_Android/src/SE_Android/files/','C:/Program Files (x86)/eclipse/workspace/SE_Android/src_gen/res/drawable-hdpi/', 'ic_launcher_h.png') /]
+	[comment copyImageFile('C:/Program Files (x86)/eclipse/workspace/SE_Android/src/SE_Android/files/','C:/Program Files (x86)/eclipse/workspace/SE_Android/src_gen/res/drawable-ldpi/', 'ic_launcher_l.png') /]
+	[comment copyImageFile('C:/Program Files (x86)/eclipse/workspace/SE_Android/src/SE_Android/files/','C:/Program Files (x86)/eclipse/workspace/SE_Android/src_gen/res/drawable-mdpi/', 'ic_launcher_m.png') /]
 [/template]
 
 [query public copyImageFile(sourcePath: String, destinationPath: String, name: String) : Boolean = invoke('SE_Android.files.Utility','copyImageFile(java.lang.String, java.lang.String, java.lang.String)', Sequence{sourcePath, destinationPath, name}) /]

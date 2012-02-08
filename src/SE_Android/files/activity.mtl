@@ -5,19 +5,11 @@
 [file ('src/' + c._package.name + '/' + c.name + '.java', false)]
 package [c._package.name/];
 
-
-
 public[if (c.isAbstract)] abstract[/if] class [c.name/] extends Activity [generalization(c)/] {
 
 [for (p:Property | c.attribute -> sortedBy(oclAsType(Property).name))]
 	[attributes(p)/]
 [/for]
-
-[comment] 	USELESS?
-[for (a:Association | c.getAssociations())]
-	[associations(a, c)/]
-[/for]
-[/comment]
 
 	/** Called when the activity is first created. */
 	@Override
@@ -46,7 +38,6 @@ public[if (c.isAbstract)] abstract[/if] class [c.name/] extends Activity [genera
 [/template]
 
 
-
 [template public generalization(c : Class) ]
 [if c.getAllUsedInterfaces() -> size()>0]
 implements [for (classifier:Classifier | c.getAllUsedInterfaces()) separator(', ')][classifier.name/] [/for][/if][/template]
@@ -60,8 +51,6 @@ implements [for (classifier:Classifier | c.getAllUsedInterfaces()) separator(', 
 [p.type.getValue(p.type.getAppliedStereotype('profile::Button'), 'editPoiActivity_btnSavePos_0') /]
 Qualified Name:	[p.type.qualifiedName/]
 Name:			[p.type.name/]
-
-
 
 [if p.type.getAppliedStereotype('profile::Button') <> null]
 [p.type.name/].setOnClickListener(new OnClickListener() {

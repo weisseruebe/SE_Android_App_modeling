@@ -13,6 +13,13 @@
     <children xmi:type="notation:DecorationNode" xmi:id="_KY1MVlHXEeGkNOOhy6FStA" type="5029"/>
     <children xmi:type="notation:BasicCompartment" xmi:id="_KY1MV1HXEeGkNOOhy6FStA" type="7017">
       <children xmi:type="notation:Shape" xmi:id="_MHQdAFHXEeGkNOOhy6FStA" type="3012" fontName="Lucida Grande" fontHeight="11" lineColor="0">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MLHusFHqEeGkNOOhy6FStA" source="Stereotype_Annotation">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MLHusVHqEeGkNOOhy6FStA" key="StereotypeWithQualifiedNameList" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MLHuslHqEeGkNOOhy6FStA" key="StereotypeList" value="profile::editable"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MLHus1HqEeGkNOOhy6FStA" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MLHutFHqEeGkNOOhy6FStA" key="PropStereoDisplay" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MLHutVHqEeGkNOOhy6FStA" key="StereotypePropertyLocation" value="Compartment"/>
+        </eAnnotations>
         <element xmi:type="uml:Property" href="editActivityTest.uml#_MHP18FHXEeGkNOOhy6FStA"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_MHQdAVHXEeGkNOOhy6FStA"/>
       </children>
@@ -21,6 +28,13 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_7ACVAVHkEeGkNOOhy6FStA"/>
       </children>
       <children xmi:type="notation:Shape" xmi:id="_7qx7IFHkEeGkNOOhy6FStA" type="3012" fontName="Lucida Grande" fontHeight="11" lineColor="0">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JQVYkFHqEeGkNOOhy6FStA" source="Stereotype_Annotation">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JQVYkVHqEeGkNOOhy6FStA" key="StereotypeWithQualifiedNameList" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JQVYklHqEeGkNOOhy6FStA" key="StereotypeList" value="profile::editable"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JQVYk1HqEeGkNOOhy6FStA" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JQVYlFHqEeGkNOOhy6FStA" key="PropStereoDisplay" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JQVYlVHqEeGkNOOhy6FStA" key="StereotypePropertyLocation" value="Compartment"/>
+        </eAnnotations>
         <element xmi:type="uml:Property" href="editActivityTest.uml#_7qwtAFHkEeGkNOOhy6FStA"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_7qx7IVHkEeGkNOOhy6FStA"/>
       </children>

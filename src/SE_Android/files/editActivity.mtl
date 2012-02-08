@@ -2,7 +2,7 @@
 [module editActivity('http://www.eclipse.org/uml2/3.0.0/UML')]
 
 [template public editActivity(c : Class)]
-	[comment @main /]
+[comment @main /]
 
 [file ('src/' + c._package.name + '/' + c.name + 'Activity.java', false)]
 package [c._package.name/];

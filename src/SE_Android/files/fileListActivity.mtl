@@ -1,13 +1,17 @@
 [comment encoding = UTF-8 /]
-[module filelistactivity('http://www.eclipse.org/uml2/3.0.0/UML')]
+[module fileListActivity('http://www.eclipse.org/uml2/3.0.0/UML')]
 
 [template public filelistactivity(c : Class)]
-[file ('src/' + c._package.name + '/' + c.name + '.java', false)]
+[comment @main /]
+[file ('src/' + c._package.name + '/' + c.name + 'Activity.java', false)]
 package [c._package.name/];
 
 import java.io.File;
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ListView;
 
 /***
  * 
@@ -15,7 +19,7 @@ import android.os.Bundle;
  *
  */
 
-public class [c.name/] extends ListActivity {
+public class [c.name/]Activity extends ListActivity {
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -23,12 +27,20 @@ public class [c.name/] extends ListActivity {
 		String subFolder = getIntent().getStringExtra("folder");
 		
 		final File rootFolder = new File(getFilesDir().getAbsolutePath()+subFolder);
-		File[ '[]'/]  routes = rootFolder.listFiles();
+		File['[]'/]  routes = rootFolder.listFiles();
 		
-		[c.name/]Adapter adapter = new [c.name/]Adapter(this, R.layout.myroutes_listitem, routes);
+		[c.name/]Adapter adapter = new [c.name/]Adapter(this, R.layout.[c.name/]view, routes);
 		setListAdapter(adapter);
 	}
 	
+	@Override
+	protected void onListItemClick(ListView l, View v, int position, long id) {
+		File item = (File) getListAdapter().getItem(position);
+		Intent result = getIntent();
+		result.putExtra("file", item);
+		setResult(RESULT_OK,result);
+		finish();
+	}
 }
 
 [/file]
@@ -41,15 +53,9 @@ public class [c.name/] extends ListActivity {
 package [c._package.name/];
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import swe.model.Tour;
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
-import android.view.View.OnLongClickListener;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
@@ -75,56 +81,17 @@ public class [c.name/]Adapter extends ArrayAdapter<File> {
 		text1.setText(files['[position]'/].getName());
 		TextView text2 = (TextView) view.findViewById(R.id.text2);
 		text2.setText(files['[position]'/].getPath());
-		
-		view.setOnClickListener(new OnListItemClickListener(position));
-		view.setOnLongClickListener(new OnListItemLongClickListener(position));
-		
+	
 		return view;
 	}
-		
-	private class OnListItemClickListener implements OnClickListener {
-		File file;
-		public OnListItemClickListener(int position) {
-			this.file = files['[position]'/];
-		}
-		@Override
-		public void onClick(View v) {
-			Intent intent = new Intent(context, RecordRouteMapActivity.class);
-			
-			try {
-				FileInputStream fileInputStream = new FileInputStream(file.getAbsolutePath());
-				Tour tour = Tour.load(fileInputStream);
-				intent.putExtra("tour", tour);
-			} catch (FileNotFoundException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			
-			context.startActivity(intent);
-		}
-	}
 	
-	private class OnListItemLongClickListener implements OnLongClickListener {
-		int pos;
-		public OnListItemLongClickListener(int position) {
-			this.pos = position;
-		}
-		@Override
-		public boolean onLongClick(View v) {
-			// TODO: show Dialog?
-			return true;
-		}
-	}	
 }
 
 [/file]
 [/template]
 
 [template public filelistview(c : Class)]
-[file ('res/layout/' + c.name + '.xml', false)]
+[file ('res/layout/' + c.name + 'view.xml', false)]
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"

@@ -48,7 +48,7 @@ public class [c.name/]Activity extends Activity {
 		
 		/* Automatisch fuellen */
 		for (String key:intent.getExtras().keySet()){
-			String controlName = "[c.name/]"+key;
+			String controlName = "[c.name.toLowerFirst()/]"+key;
 			int id = getResources().getIdentifier(controlName, "id", this.getPackageName());
 			View view = findViewById(id);
 			if (view!=null){
@@ -64,7 +64,7 @@ public class [c.name/]Activity extends Activity {
 
 	public void end(){
 		Intent result = getIntent();
-		[for (p:Property | c.attribute )]
+		[for (p:Property | c.attribute -> select( e: Property | e.getAppliedStereotype('profile::editable')<>null))]
 	    EditText [c.name.toLowerFirst()/][p.name/] = (EditText) findViewById(R.id.[c.name.toLowerFirst()/][p.name/]);	
 		result.putExtra("[p.name/]",[c.name.toLowerFirst()/][p.name/].getText().toString());
 		[/for]
@@ -96,11 +96,12 @@ public class [c.name/]Activity extends Activity {
         android:text="[c.name/]"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
-[for (p:Property | c.attribute )]
+[for (p:Property | c.attribute -> select( e: Property | e.getAppliedStereotype('profile::editable')<>null))]
 	<TextView
         android:id="@+id/label[c.name.toUpperFirst()/][p.name.toUpperFirst()/]"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+	    android:layout_height="wrap_content"
+		android:textStyle="bold"
         android:text="[p.name.toUpperFirst()/]" />
     <EditText
         android:id="@+id/[c.name.toLowerFirst()/][p.name/]"
@@ -109,14 +110,29 @@ public class [c.name/]Activity extends Activity {
     </EditText>
 [/for]
 
- [comment hier koennen noch Textviews rein fuer nicht editierbares/]
+[comment Das sollte schoener gehen mit Query oder so "getEditableProperties"/]
+[for (p:Property | c.attribute -> select( e: Property | e.getAppliedStereotype('profile::editable') = null))]
+	<TextView
+        android:id="@+id/label[c.name.toUpperFirst()/][p.name.toUpperFirst()/]"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:textStyle="bold"
+        android:text="[p.name.toUpperFirst()/]" />
+    <TextView
+        android:id="@+id/[c.name.toLowerFirst()/][p.name/]"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </TextView>
+[/for]
   
     <Button
         android:id="@+id/btnSave"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Save" />
 
 </LinearLayout>
 [/file]
 [/template]
+
+

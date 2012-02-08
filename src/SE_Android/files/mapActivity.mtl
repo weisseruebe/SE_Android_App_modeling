@@ -1,0 +1,208 @@
+[comment encoding = UTF-8 /]
+[module mapActivity('http://www.eclipse.org/uml2/3.0.0/UML')]
+
+[template public mapActivity(c : Class)]
+[comment @main /]
+
+[file ('src/' + c._package.name + '/' + c.name + 'Activity.java', false)]
+package [c._package.name/];
+
+import android.content.Context;
+import android.content.Intent;
+import android.graphics.drawable.Drawable;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
+import android.os.Bundle;
+import com.google.android.maps.GeoPoint;
+import com.google.android.maps.ItemizedOverlay;
+import com.google.android.maps.MapActivity;
+import com.google.android.maps.MapView;
+import com.google.android.maps.MyLocationOverlay;
+import com.google.android.maps.OverlayItem;
+
+/***
+ * @author andreasrettig
+ *
+ */
+
+public class [c.name/]Activity extends MapActivity {
+	private MapView mapView;
+	
+	
+	[for (p:Property | c.attribute )]
+	//Sterotypes of [p.name/]
+	[for (s:Stereotype | p.getAppliedStereotypes())]
+	//NAME [s.name/]
+	[/for]
+	private [p.name.toUpperFirst()/]Overlay [p.name/]Overlay;
+	[simpleOverlay(c, p)/]
+	[/for]
+
+	[comment warum geht das so nicht?/]
+	[for (p:Property | c.attribute -> select( e: Property | e.getAppliedStereotype('profile::overlay')<>null))]
+	private [p.name.toUpperFirst()/]Overlay [p.name/]Overlay;
+	[simpleOverlay(c, p)/]
+	[/for]
+
+	private LocationManager lm;
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.[c.name.toLower()/]view);
+		
+		//Modelling: StereoType MapView
+		initMap();
+		//Modelling: StereoType LocationService
+		initLocationManager();
+		//Modelling: StereoType Overlay mit Name!
+		initRouteOverlay(); 
+	
+	}
+
+	//Modelling: StereoType LocationService
+	private void initLocationManager() {
+		lm = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
+		LocationListener ll = new LocationListener() {
+			
+			@Override
+			public void onStatusChanged(String provider, int status, Bundle extras) {}
+			
+			@Override
+			public void onProviderEnabled(String provider) {}
+			
+			@Override
+			public void onProviderDisabled(String provider) {}
+			
+			@Override
+			public void onLocationChanged(Location location) {
+				updateLocation(location);
+			}
+		};
+		lm.requestLocationUpdates(LocationManager.GPS_PROVIDER, 3000, 100, ll);		
+	}
+
+	//Modelling: StereoType LocationService
+	protected void updateLocation(Location location) {
+		GeoPoint gp = new GeoPoint((int)(location.getLatitude()*1E6), (int)(location.getLongitude()*1E6));
+		mapView.getController().animateTo(gp);	
+		mapView.invalidate();
+	}
+
+	public void end(){
+		Intent result = getIntent();
+		setResult(RESULT_OK,result);
+		finish();
+	}
+
+	//Modelling: StereoType Overlay mit Name
+	protected void initRouteOverlay() {
+[comment Hier nur overlay, wie oben/]
+		[for (p:Property | c.attribute)]
+		[comment Marker kopieren/]		
+		Drawable [p.name/]Marker = this.getResources().getDrawable(R.drawable.placemark_circle);
+		[p.name/]Overlay = new [p.name.toUpperFirst()/]Overlay(this,[p.name/]Marker);
+		mapView.getOverlays().add([p.name/]Overlay);
+		[/for]
+	}
+	
+	//Modelling: StereoType MapView
+	protected void initMap() {
+		mapView = (MapView) findViewById(R.id.mapview);
+		mapView.setBuiltInZoomControls(true);
+
+		final MyLocationOverlay myLocationOverlay = new MyLocationOverlay(this, mapView);
+        mapView.getOverlays().add(myLocationOverlay);
+        myLocationOverlay.enableCompass();
+        myLocationOverlay.enableMyLocation();
+        myLocationOverlay.runOnFirstFix(new Runnable() {
+            public void run() {
+                mapView.getController().animateTo(myLocationOverlay.getMyLocation());
+            }
+        });
+	}
+	
+	@Override
+	protected boolean isRouteDisplayed() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+}
+[/file]
+[editView(c)/]
+[/template]
+
+[template public simpleOverlay(c: Class, p : Property)]
+[file ('src/' + c._package.name + '/' + p.name.toUpperFirst() + 'Overlay.java', false)]
+
+package [c._package.name/];
+
+import android.app.AlertDialog;
+import android.content.Context;
+import android.graphics.drawable.Drawable;
+
+import com.google.android.maps.GeoPoint;
+import com.google.android.maps.ItemizedOverlay;
+import com.google.android.maps.OverlayItem;
+
+public class [p.name.toUpperFirst()/]Overlay extends ItemizedOverlay<OverlayItem> {
+
+	private Context context;
+	
+	public [p.name.toUpperFirst()/]Overlay(Context c, Drawable defaultMarker) {
+		super(boundCenterBottom(defaultMarker));
+		this.context = c;
+		populate();
+	}
+	
+	@Override
+	protected OverlayItem createItem(int i) {
+		GeoPoint gp = new GeoPoint(0, 0);
+		return new OverlayItem(gp, "GeoPoint", "Example");
+	}
+
+	@Override
+	public int size() {
+		return 1;
+	}
+
+	protected boolean onTap(int index) {
+		AlertDialog.Builder dialog = new AlertDialog.Builder(context);
+		dialog.setTitle("Tapped item "+index+" at Overlay: [p.name/]");
+		dialog.show();
+		return true;
+	}
+}
+[/file]
+[/template]
+
+[template public editView(c : Class)]
+[file ('res/layout/' + c.name.toLower() + 'view.xml', false)]
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textViewMapTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MapView"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <com.google.android.maps.MapView
+        android:id="@+id/mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.84"
+        android:apiKey="0yNnniIeOJ9ZSemrxoRfxGdEj_sxcB3hkncu_TQ"
+        android:clickable="true" />
+
+</LinearLayout>
+[/file]
+[/template]
+
+

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_cqJwgFI4EeGq16zcTAufGw" type="PapyrusUMLClassDiagram" name="NewDiagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_dcQi4FI4EeGq16zcTAufGw" type="2008" fontName="Lucida Grande" fontHeight="11" lineColor="0">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dc0jkFI4EeGq16zcTAufGw" source="ShadowFigure">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dc0jkVI4EeGq16zcTAufGw" key="ShadowFigure_Value" value="false"/>
+    </eAnnotations>
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dc1KoFI4EeGq16zcTAufGw" source="displayNameLabelIcon">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dc1KoVI4EeGq16zcTAufGw" key="displayNameLabelIcon_value" value="false"/>
+    </eAnnotations>
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dc1xsFI4EeGq16zcTAufGw" source="QualifiedName">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dc1xsVI4EeGq16zcTAufGw" key="QualifiedNameDepth" value="1000"/>
+    </eAnnotations>
+    <children xmi:type="notation:DecorationNode" xmi:id="_dc1xslI4EeGq16zcTAufGw" type="5029"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_dc1xs1I4EeGq16zcTAufGw" type="7017">
+      <children xmi:type="notation:Shape" xmi:id="_AF2kYFJKEeGq16zcTAufGw" type="3012" fontName="Lucida Grande" fontHeight="11" lineColor="0">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Exi3cFJKEeGq16zcTAufGw" source="Stereotype_Annotation">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Exi3cVJKEeGq16zcTAufGw" key="StereotypeWithQualifiedNameList" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Exi3clJKEeGq16zcTAufGw" key="StereotypeList" value="profile::overlay"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Exi3c1JKEeGq16zcTAufGw" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Exi3dFJKEeGq16zcTAufGw" key="PropStereoDisplay" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Exi3dVJKEeGq16zcTAufGw" key="StereotypePropertyLocation" value="Compartment"/>
+        </eAnnotations>
+        <element xmi:type="uml:Property" href="mapActivityTest.uml#_AF0vMFJKEeGq16zcTAufGw"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AF2kYVJKEeGq16zcTAufGw"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_dc1xtFI4EeGq16zcTAufGw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_dc1xtVI4EeGq16zcTAufGw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_dc1xtlI4EeGq16zcTAufGw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dc1xt1I4EeGq16zcTAufGw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_dc1xuFI4EeGq16zcTAufGw" type="7018">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_dc1xuVI4EeGq16zcTAufGw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_dc1xulI4EeGq16zcTAufGw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_dc1xu1I4EeGq16zcTAufGw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dc1xvFI4EeGq16zcTAufGw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_dc2YwFI4EeGq16zcTAufGw" type="7019">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_dc2YwVI4EeGq16zcTAufGw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_dc2YwlI4EeGq16zcTAufGw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_dc2Yw1I4EeGq16zcTAufGw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dc2YxFI4EeGq16zcTAufGw"/>
+    </children>
+    <element xmi:type="uml:Class" href="mapActivityTest.uml#_dbl0gFI4EeGq16zcTAufGw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dcQi4VI4EeGq16zcTAufGw" x="284" y="80"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_cqKXkFI4EeGq16zcTAufGw"/>
+  <element xmi:type="uml:Model" href="mapActivityTest.uml#_cqJJcFI4EeGq16zcTAufGw"/>
+</notation:Diagram>

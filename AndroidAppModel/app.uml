@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:profile="http:///schemas/profile/_labIsEHkEeGAXfaoLuzzwg/9" xmlns:profile_1="http:///schemas/profile/_FwEg0ELWEeGJMPMvOhQvkg/19" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/profile/_labIsEHkEeGAXfaoLuzzwg/9 file:/C:/Program%20Files%20(x86)/eclipse/workspace/SWE_Android/AndroidProfile/android.profile.uml#_labIsUHkEeGAXfaoLuzzwg http:///schemas/profile/_FwEg0ELWEeGJMPMvOhQvkg/19 ../AndroidProfile/android.profile.uml#_FwEg0ULWEeGJMPMvOhQvkg">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:profile="http:///schemas/profile/_labIsEHkEeGAXfaoLuzzwg/9" xmlns:profile_1="http:///schemas/profile/_YbHVcFMCEeGLpb8BKIf4yw/32" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/profile/_labIsEHkEeGAXfaoLuzzwg/9 file:/C:/Program%20Files%20(x86)/eclipse/workspace/SWE_Android/AndroidProfile/android.profile.uml#_labIsUHkEeGAXfaoLuzzwg http:///schemas/profile/_YbHVcFMCEeGLpb8BKIf4yw/32 file:/C:/Program%20Files%20(x86)/eclipse/workspace/SE_Android/AndroidProfile/android.profile.uml#_YbHVcVMCEeGLpb8BKIf4yw">
   <uml:Model xmi:id="_W94yMEHaEeGAXfaoLuzzwg" name="test/model">
     <packagedElement xmi:type="uml:Class" xmi:id="_xuILcEHjEeGAXfaoLuzzwg" name="EditPoiActivity">
       <ownedAttribute xmi:id="_-6ebgEHkEeGAXfaoLuzzwg" name="btnSavePos" type="_5TIN8EHjEeGAXfaoLuzzwg" aggregation="composite" association="_-6fpoEHkEeGAXfaoLuzzwg">
@@ -52,7 +52,6 @@
       </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_Z5RIsEKfEeGlK4YA9aWjZw" name="Manifest"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_hGHUcEKgEeGlK4YA9aWjZw" name="StartingActivity"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_JlK4MELYEeGYJPg1Jf5l1w" name="standardClass">
       <ownedAttribute xmi:id="_HjKK4ELdEeGYJPg1Jf5l1w" name="testPropertyStandard1" visibility="public">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EChar"/>
@@ -71,9 +70,200 @@
       </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_cM2EUFGGEeGkNOOhy6FStA" name="FileListActivity"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_HWH9sFLyEeGLpb8BKIf4yw" name="MainActivity">
+      <ownedAttribute xmi:id="_uTR5YFLzEeGLpb8BKIf4yw" name="REQUESTTOUR" visibility="public" isStatic="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vm0k4FLzEeGLpb8BKIf4yw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vmyvsFLzEeGLpb8BKIf4yw" value="1"/>
+        <defaultValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="A_ownedTrigger_behavioredClassifier-_ownedEnd.0-_upperValue" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_5MxygFLzEeGLpb8BKIf4yw" name="gridAdapter" type="_xt9tAFLyEeGLpb8BKIf4yw" aggregation="composite" association="_5M010FLzEeGLpb8BKIf4yw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5MxygVLzEeGLpb8BKIf4yw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5MxyglLzEeGLpb8BKIf4yw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_HXcn0FL8EeGLpb8BKIf4yw" name="recordRouteMapActivity" type="_EDKMkFL8EeGLpb8BKIf4yw" aggregation="composite" association="_HXfrIFL8EeGLpb8BKIf4yw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HXcn0VL8EeGLpb8BKIf4yw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HXcn0lL8EeGLpb8BKIf4yw" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xt9tAFLyEeGLpb8BKIf4yw" name="GridAdapter">
+      <ownedAttribute xmi:id="_eMC6oFL0EeGLpb8BKIf4yw" name="btn_adapter" type="_YOrkUFL0EeGLpb8BKIf4yw" aggregation="composite" association="_eMF98FL0EeGLpb8BKIf4yw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eMC6oVL0EeGLpb8BKIf4yw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eMC6olL0EeGLpb8BKIf4yw" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5M010FLzEeGLpb8BKIf4yw" name="adapter" memberEnd="_5M010VLzEeGLpb8BKIf4yw _5MxygFLzEeGLpb8BKIf4yw">
+      <ownedEnd xmi:id="_5M010VLzEeGLpb8BKIf4yw" name="mainActivity" type="_HWH9sFLyEeGLpb8BKIf4yw" association="_5M010FLzEeGLpb8BKIf4yw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5M010lLzEeGLpb8BKIf4yw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5M0101LzEeGLpb8BKIf4yw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_YOrkUFL0EeGLpb8BKIf4yw" name="btn_adapter">
+      <ownedAttribute xmi:id="_jH-hwFL3EeGLpb8BKIf4yw" name="fileListActivity" type="_L3lkcFL3EeGLpb8BKIf4yw" aggregation="composite" association="_jH_v4FL3EeGLpb8BKIf4yw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jH-hwVL3EeGLpb8BKIf4yw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jH-hwlL3EeGLpb8BKIf4yw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Od8tQFL4EeGLpb8BKIf4yw" name="editTourActivity" type="_EKA_UFL4EeGLpb8BKIf4yw" aggregation="composite" association="_Od_wkFL4EeGLpb8BKIf4yw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Od8tQVL4EeGLpb8BKIf4yw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Od8tQlL4EeGLpb8BKIf4yw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_aLlZEFL4EeGLpb8BKIf4yw" name="userPreferences" type="_VpAlwFL4EeGLpb8BKIf4yw" aggregation="composite" association="_aLpqgFL4EeGLpb8BKIf4yw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aLlZEVL4EeGLpb8BKIf4yw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aLlZElL4EeGLpb8BKIf4yw" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_eMF98FL0EeGLpb8BKIf4yw" name="gridAdapter_btn_adapter_0" memberEnd="_eMF98VL0EeGLpb8BKIf4yw _eMC6oFL0EeGLpb8BKIf4yw">
+      <ownedEnd xmi:id="_eMF98VL0EeGLpb8BKIf4yw" name="gridAdapter" type="_xt9tAFLyEeGLpb8BKIf4yw" association="_eMF98FL0EeGLpb8BKIf4yw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eMF98lL0EeGLpb8BKIf4yw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eMF981L0EeGLpb8BKIf4yw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_L3lkcFL3EeGLpb8BKIf4yw" name="FileListActivity">
+      <ownedAttribute xmi:id="_mQ-LoFL6EeGLpb8BKIf4yw" name="fileListAdapter" type="_xkagsFL4EeGLpb8BKIf4yw" aggregation="composite" association="_mRBO8FL6EeGLpb8BKIf4yw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mQ-LoVL6EeGLpb8BKIf4yw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mQ-LolL6EeGLpb8BKIf4yw" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_jH_v4FL3EeGLpb8BKIf4yw" name="intent_routes" memberEnd="_jH_v4VL3EeGLpb8BKIf4yw _jH-hwFL3EeGLpb8BKIf4yw">
+      <ownedEnd xmi:id="_jH_v4VL3EeGLpb8BKIf4yw" name="btn_adapter" type="_YOrkUFL0EeGLpb8BKIf4yw" association="_jH_v4FL3EeGLpb8BKIf4yw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jH_v4lL3EeGLpb8BKIf4yw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jH_v41L3EeGLpb8BKIf4yw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EKA_UFL4EeGLpb8BKIf4yw" name="EditTourActivity">
+      <ownedAttribute xmi:id="_bO1ecFL7EeGLpb8BKIf4yw" name="btnSaveTour" type="_WyhEIFL7EeGLpb8BKIf4yw" aggregation="composite" association="_bO4hwFL7EeGLpb8BKIf4yw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bO1ecVL7EeGLpb8BKIf4yw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bO1eclL7EeGLpb8BKIf4yw" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Od_wkFL4EeGLpb8BKIf4yw" name="intent_rec" memberEnd="_Od_wkVL4EeGLpb8BKIf4yw _Od8tQFL4EeGLpb8BKIf4yw">
+      <ownedEnd xmi:id="_Od_wkVL4EeGLpb8BKIf4yw" name="btn_adapter" type="_YOrkUFL0EeGLpb8BKIf4yw" association="_Od_wkFL4EeGLpb8BKIf4yw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Od_wklL4EeGLpb8BKIf4yw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Od_wk1L4EeGLpb8BKIf4yw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_VpAlwFL4EeGLpb8BKIf4yw" name="UserPreferences"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_aLpqgFL4EeGLpb8BKIf4yw" name="intent_prefs" memberEnd="_aLpqgVL4EeGLpb8BKIf4yw _aLlZEFL4EeGLpb8BKIf4yw">
+      <ownedEnd xmi:id="_aLpqgVL4EeGLpb8BKIf4yw" name="btn_adapter" type="_YOrkUFL0EeGLpb8BKIf4yw" association="_aLpqgFL4EeGLpb8BKIf4yw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aLpqglL4EeGLpb8BKIf4yw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aLpqg1L4EeGLpb8BKIf4yw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xkagsFL4EeGLpb8BKIf4yw" name="FileListAdapter"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_mRBO8FL6EeGLpb8BKIf4yw" name="adapter" memberEnd="_mRBO8VL6EeGLpb8BKIf4yw _mQ-LoFL6EeGLpb8BKIf4yw">
+      <ownedEnd xmi:id="_mRBO8VL6EeGLpb8BKIf4yw" name="fileListActivity" type="_L3lkcFL3EeGLpb8BKIf4yw" association="_mRBO8FL6EeGLpb8BKIf4yw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mRBO8lL6EeGLpb8BKIf4yw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mRBO81L6EeGLpb8BKIf4yw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_WyhEIFL7EeGLpb8BKIf4yw" name="btnSaveTour">
+      <ownedAttribute xmi:id="_fUaMsFL7EeGLpb8BKIf4yw" name="editTour" visibility="public">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gRA-4FL7EeGLpb8BKIf4yw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gQ_JsFL7EeGLpb8BKIf4yw" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_gRA-4VL7EeGLpb8BKIf4yw">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="__ucgAFMEEeGLpb8BKIf4yw" name="mainActivity" type="_HWH9sFLyEeGLpb8BKIf4yw" aggregation="composite" association="__ufjUFMEEeGLpb8BKIf4yw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__ucgAVMEEeGLpb8BKIf4yw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__ucgAlMEEeGLpb8BKIf4yw" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_bO4hwFL7EeGLpb8BKIf4yw" name="editTourActivity_btnSaveTour_0" memberEnd="_bO4hwVL7EeGLpb8BKIf4yw _bO1ecFL7EeGLpb8BKIf4yw">
+      <ownedEnd xmi:id="_bO4hwVL7EeGLpb8BKIf4yw" name="editTourActivity" type="_EKA_UFL4EeGLpb8BKIf4yw" association="_bO4hwFL7EeGLpb8BKIf4yw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bO4hwlL7EeGLpb8BKIf4yw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bO4hw1L7EeGLpb8BKIf4yw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EDKMkFL8EeGLpb8BKIf4yw" name="RecordRouteMapActivity">
+      <ownedAttribute xmi:id="_G5f1oFL-EeGLpb8BKIf4yw" name="textView" visibility="public">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HuEGIVL-EeGLpb8BKIf4yw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HuEGIFL-EeGLpb8BKIf4yw" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HuEGIlL-EeGLpb8BKIf4yw">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OSk8AFL-EeGLpb8BKIf4yw" name="btnRecord" type="_K_zjsFL-EeGLpb8BKIf4yw" aggregation="composite" association="_OSmKIFL-EeGLpb8BKIf4yw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OSk8AVL-EeGLpb8BKIf4yw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OSk8AlL-EeGLpb8BKIf4yw" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_V1e3UFL_EeGLpb8BKIf4yw" name="saveTour" visibility="private"/>
+      <ownedOperation xmi:id="_4Fx3wFL_EeGLpb8BKIf4yw" name="initMap" visibility="protected"/>
+      <ownedOperation xmi:id="_8KtFwFL_EeGLpb8BKIf4yw" name="initRouteOverlay" visibility="protected"/>
+      <ownedOperation xmi:id="_B2dusFMAEeGLpb8BKIf4yw" name="initLocationManager" visibility="private"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_HXfrIFL8EeGLpb8BKIf4yw" name="intent" memberEnd="_HXfrIVL8EeGLpb8BKIf4yw _HXcn0FL8EeGLpb8BKIf4yw">
+      <ownedEnd xmi:id="_HXfrIVL8EeGLpb8BKIf4yw" name="mainActivity" type="_HWH9sFLyEeGLpb8BKIf4yw" association="_HXfrIFL8EeGLpb8BKIf4yw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HXfrIlL8EeGLpb8BKIf4yw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HXfrI1L8EeGLpb8BKIf4yw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_K_zjsFL-EeGLpb8BKIf4yw" name="btnRecord">
+      <ownedAttribute xmi:id="_9ZDksFL-EeGLpb8BKIf4yw" name="editPoiActivity" type="_6vHG8FL-EeGLpb8BKIf4yw" aggregation="composite" association="_9ZGoAFL-EeGLpb8BKIf4yw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9ZDksVL-EeGLpb8BKIf4yw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9ZDkslL-EeGLpb8BKIf4yw" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_OSmKIFL-EeGLpb8BKIf4yw" name="btnRecord" memberEnd="_OSn_UFL-EeGLpb8BKIf4yw _OSk8AFL-EeGLpb8BKIf4yw">
+      <ownedEnd xmi:id="_OSn_UFL-EeGLpb8BKIf4yw" name="recordRouteMapActivity" type="_EDKMkFL8EeGLpb8BKIf4yw" association="_OSmKIFL-EeGLpb8BKIf4yw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OSn_UVL-EeGLpb8BKIf4yw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OSn_UlL-EeGLpb8BKIf4yw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_6vHG8FL-EeGLpb8BKIf4yw" name="EditPoiActivity">
+      <ownedAttribute xmi:id="_Sg3PcFMAEeGLpb8BKIf4yw" name="btnSavePos" type="_NEqsgFMAEeGLpb8BKIf4yw" aggregation="composite" association="_Sg6SwFMAEeGLpb8BKIf4yw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Sg3PcVMAEeGLpb8BKIf4yw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Sg3PclMAEeGLpb8BKIf4yw" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_JJFnwFMAEeGLpb8BKIf4yw" name="autoFillWidgets" visibility="private"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_9ZGoAFL-EeGLpb8BKIf4yw" name="intent" memberEnd="_9ZGoAVL-EeGLpb8BKIf4yw _9ZDksFL-EeGLpb8BKIf4yw">
+      <ownedEnd xmi:id="_9ZGoAVL-EeGLpb8BKIf4yw" name="btnRecord" type="_K_zjsFL-EeGLpb8BKIf4yw" association="_9ZGoAFL-EeGLpb8BKIf4yw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9ZGoAlL-EeGLpb8BKIf4yw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9ZGoA1L-EeGLpb8BKIf4yw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NEqsgFMAEeGLpb8BKIf4yw" name="btnSavePos">
+      <ownedAttribute xmi:id="_Y1jgoFMAEeGLpb8BKIf4yw" name="poiName" visibility="public">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z8fTgFMAEeGLpb8BKIf4yw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z8deUFMAEeGLpb8BKIf4yw" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Z8ghoFMAEeGLpb8BKIf4yw">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_akZoEFMAEeGLpb8BKIf4yw" name="poiDesc" visibility="public">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bKSjYFMAEeGLpb8BKIf4yw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bKQuMFMAEeGLpb8BKIf4yw" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_bKTxgFMAEeGLpb8BKIf4yw">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_pqdO8FMFEeGLpb8BKIf4yw" name="recordRouteMapActivity" type="_EDKMkFL8EeGLpb8BKIf4yw" aggregation="composite" association="_pqgSQFMFEeGLpb8BKIf4yw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pqdO8VMFEeGLpb8BKIf4yw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pqdO8lMFEeGLpb8BKIf4yw" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Sg6SwFMAEeGLpb8BKIf4yw" name="editPoiActivity_btnSavePos_1" memberEnd="_Sg6SwVMAEeGLpb8BKIf4yw _Sg3PcFMAEeGLpb8BKIf4yw">
+      <ownedEnd xmi:id="_Sg6SwVMAEeGLpb8BKIf4yw" name="editPoiActivity" type="_6vHG8FL-EeGLpb8BKIf4yw" association="_Sg6SwFMAEeGLpb8BKIf4yw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Sg6SwlMAEeGLpb8BKIf4yw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Sg6Sw1MAEeGLpb8BKIf4yw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="__ufjUFMEEeGLpb8BKIf4yw" name="btnSaveTour_mainActivity_0" memberEnd="__ufjUVMEEeGLpb8BKIf4yw __ucgAFMEEeGLpb8BKIf4yw">
+      <ownedEnd xmi:id="__ufjUVMEEeGLpb8BKIf4yw" name="btnSaveTour" type="_WyhEIFL7EeGLpb8BKIf4yw" association="__ufjUFMEEeGLpb8BKIf4yw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__ufjUlMEEeGLpb8BKIf4yw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__ufjU1MEEeGLpb8BKIf4yw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_pqgSQFMFEeGLpb8BKIf4yw" name="btnSavePos_recordRouteMapActivity_0" memberEnd="_pqgSQVMFEeGLpb8BKIf4yw _pqdO8FMFEeGLpb8BKIf4yw">
+      <ownedEnd xmi:id="_pqgSQVMFEeGLpb8BKIf4yw" name="btnSavePos" type="_NEqsgFMAEeGLpb8BKIf4yw" association="_pqgSQFMFEeGLpb8BKIf4yw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pqgSQlMFEeGLpb8BKIf4yw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pqgSQ1MFEeGLpb8BKIf4yw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
     <profileApplication xmi:id="_bEKwkELWEeGYJPg1Jf5l1w">
       <eAnnotations xmi:id="_bEVIoELWEeGYJPg1Jf5l1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="../AndroidProfile/android.profile.uml#_FwEg0ULWEeGJMPMvOhQvkg"/>
+        <references xmi:type="ecore:EPackage" href="../AndroidProfile/android.profile.uml#_YbHVcVMCEeGLpb8BKIf4yw"/>
       </eAnnotations>
       <appliedProfile href="../AndroidProfile/android.profile.uml#_jk3WQEHZEeGAXfaoLuzzwg"/>
     </profileApplication>
@@ -83,12 +273,44 @@
   <profile:EditText xmi:id="_yBCD4EHkEeGAXfaoLuzzwg" XMLInstance="poiNameID" base_Property="_CcsagEHkEeGAXfaoLuzzwg"/>
   <profile:EditText xmi:id="_3LunIEHkEeGAXfaoLuzzwg" XMLInstance="poiDescID" base_Property="_2BmWUEHkEeGAXfaoLuzzwg"/>
   <profile:Intent xmi:id="_A1uAMEHlEeGAXfaoLuzzwg" base_Association="_-6fpoEHkEeGAXfaoLuzzwg" startForResult="true"/>
-  <profile_1:AndroidManifestXML xmi:id="_cBwaMELWEeGYJPg1Jf5l1w" INTERNET="true" ACCESS_FINE_LOCATION="true" ACCESS_COARSE_LOCATION="true" ACCESS_LOCATION_EXTRA_COMMANDS="true" base_Class="_Z5RIsEKfEeGlK4YA9aWjZw" min_SDK="8" MainActivity="_hGHUcEKgEeGlK4YA9aWjZw" showTitleBar="false" useGoogleMapsLibrary="true"/>
-  <profile_1:Activity xmi:id="_lFSQMELWEeGYJPg1Jf5l1w" base_Class="_hGHUcEKgEeGlK4YA9aWjZw"/>
+  <profile_1:AndroidManifestXML xmi:id="_cBwaMELWEeGYJPg1Jf5l1w" INTERNET="true" ACCESS_FINE_LOCATION="true" ACCESS_COARSE_LOCATION="true" ACCESS_LOCATION_EXTRA_COMMANDS="true" base_Class="_Z5RIsEKfEeGlK4YA9aWjZw" min_SDK="8" MainActivity="_HWH9sFLyEeGLpb8BKIf4yw" showTitleBar="false" useGoogleMapsLibrary="true"/>
   <profile_1:Activity xmi:id="_lsMfMELWEeGYJPg1Jf5l1w" base_Class="_xuILcEHjEeGAXfaoLuzzwg"/>
-  <profile_1:Button xmi:id="_naRxoELWEeGYJPg1Jf5l1w" base_Class="_5TIN8EHjEeGAXfaoLuzzwg"/>
-  <profile_1:EditText xmi:id="_ox2okELWEeGYJPg1Jf5l1w" base_Property="_CcsagEHkEeGAXfaoLuzzwg"/>
-  <profile_1:EditText xmi:id="_pVvYwELWEeGYJPg1Jf5l1w" base_Property="_2BmWUEHkEeGAXfaoLuzzwg"/>
-  <profile_1:Button xmi:id="_q6uKQEdPEeGaFc2GM-Tk7w" base_Class="_oT5R8EdPEeGaFc2GM-Tk7w" initOnClickListener="false"/>
+  <profile_1:Button xmi:id="_naRxoELWEeGYJPg1Jf5l1w" base_Class="_5TIN8EHjEeGAXfaoLuzzwg" XMLInstance="&quot;&quot;"/>
+  <profile_1:EditText xmi:id="_ox2okELWEeGYJPg1Jf5l1w" XMLInstance="&quot;&quot;" base_Property="_CcsagEHkEeGAXfaoLuzzwg"/>
+  <profile_1:EditText xmi:id="_pVvYwELWEeGYJPg1Jf5l1w" XMLInstance="&quot;&quot;" base_Property="_2BmWUEHkEeGAXfaoLuzzwg"/>
+  <profile_1:Button xmi:id="_q6uKQEdPEeGaFc2GM-Tk7w" base_Class="_oT5R8EdPEeGaFc2GM-Tk7w" XMLInstance="&quot;&quot;" initOnClickListener="false"/>
   <profile_1:ListActivity xmi:id="_iAkWcFGGEeGkNOOhy6FStA" base_Class="_cM2EUFGGEeGkNOOhy6FStA"/>
+  <profile_1:Activity xmi:id="_JBhvkFLyEeGLpb8BKIf4yw" base_Class="_HWH9sFLyEeGLpb8BKIf4yw"/>
+  <profile_1:BaseAdapter xmi:id="_yxY44FLyEeGLpb8BKIf4yw" base_Class="_xt9tAFLyEeGLpb8BKIf4yw" XMLInstance="grid"/>
+  <profile_1:Button xmi:id="_Y5O9MFL0EeGLpb8BKIf4yw" base_Class="_YOrkUFL0EeGLpb8BKIf4yw" XMLInstance="button"/>
+  <profile_1:ListActivity xmi:id="_gAFjwFL3EeGLpb8BKIf4yw" base_Class="_L3lkcFL3EeGLpb8BKIf4yw"/>
+  <profile_1:Intent xmi:id="_k400UFL3EeGLpb8BKIf4yw" base_Association="_jH_v4FL3EeGLpb8BKIf4yw">
+    <putExtra>&quot;folder&quot;, &quot;/tours/&quot;</putExtra>
+  </profile_1:Intent>
+  <profile_1:Activity xmi:id="_FqMYoFL4EeGLpb8BKIf4yw" base_Class="_EKA_UFL4EeGLpb8BKIf4yw"/>
+  <profile_1:Intent xmi:id="_Q-EgoFL4EeGLpb8BKIf4yw" base_Association="_Od_wkFL4EeGLpb8BKIf4yw" startActivityForResult="true"/>
+  <profile_1:PreferenceActivity xmi:id="_Yz83wFL4EeGLpb8BKIf4yw" base_Class="_VpAlwFL4EeGLpb8BKIf4yw"/>
+  <profile_1:Intent xmi:id="_lec0cFL4EeGLpb8BKIf4yw" base_Association="_aLpqgFL4EeGLpb8BKIf4yw"/>
+  <profile_1:ArrayAdapterT xmi:id="_Uw9RgFL6EeGLpb8BKIf4yw" base_Class="_xkagsFL4EeGLpb8BKIf4yw" XMLInstance="myroutes_listitem" ArrayAdapterObjectTType="File"/>
+  <profile_1:Button xmi:id="_ZFLDQFL7EeGLpb8BKIf4yw" base_Class="_WyhEIFL7EeGLpb8BKIf4yw"/>
+  <profile_1:EditText xmi:id="_g7hUcFL7EeGLpb8BKIf4yw" XMLInstance="editTextTourName" base_Property="_fUaMsFL7EeGLpb8BKIf4yw"/>
+  <profile_1:Intent xmi:id="_N9w0gFL8EeGLpb8BKIf4yw" base_Association="_HXfrIFL8EeGLpb8BKIf4yw">
+    <putExtra>&quot;tour&quot;, result</putExtra>
+  </profile_1:Intent>
+  <profile_1:MapActivity xmi:id="_WnsewFL8EeGLpb8BKIf4yw" base_Class="_EDKMkFL8EeGLpb8BKIf4yw"/>
+  <profile_1:TextView xmi:id="_IaE3kFL-EeGLpb8BKIf4yw" XMLInstance="textViewTourName" base_Property="_G5f1oFL-EeGLpb8BKIf4yw"/>
+  <profile_1:Button xmi:id="_MWr3EFL-EeGLpb8BKIf4yw" base_Class="_K_zjsFL-EeGLpb8BKIf4yw" XMLInstance="btnRecord"/>
+  <profile_1:Activity xmi:id="_8N7OUFL-EeGLpb8BKIf4yw" base_Class="_6vHG8FL-EeGLpb8BKIf4yw"/>
+  <profile_1:Intent xmi:id="_-Sr7YFL-EeGLpb8BKIf4yw" base_Association="_9ZGoAFL-EeGLpb8BKIf4yw">
+    <putExtra>&quot;lat&quot;, location.getLatitude(), &quot;lon&quot;, location.getLongitude()</putExtra>
+  </profile_1:Intent>
+  <profile_1:Button xmi:id="_PZiSIFMAEeGLpb8BKIf4yw" base_Class="_NEqsgFMAEeGLpb8BKIf4yw" XMLInstance="btnSavePoi"/>
+  <profile_1:EditText xmi:id="_cEm2kFMAEeGLpb8BKIf4yw" XMLInstance="editTextPoiName" base_Property="_Y1jgoFMAEeGLpb8BKIf4yw"/>
+  <profile_1:EditText xmi:id="_eALLYFMAEeGLpb8BKIf4yw" XMLInstance="editTextPoiDesc" base_Property="_akZoEFMAEeGLpb8BKIf4yw"/>
+  <profile_1:IntentResult xmi:id="_CThr4FMFEeGLpb8BKIf4yw" base_Association="__ufjUFMEEeGLpb8BKIf4yw">
+    <putExtra>&quot;tour&quot;, tour</putExtra>
+  </profile_1:IntentResult>
+  <profile_1:IntentResult xmi:id="_uy4hUFMFEeGLpb8BKIf4yw" base_Association="_pqgSQFMFEeGLpb8BKIf4yw">
+    <putExtra>&quot;name&quot;, poiName.getText().toString(), &quot;desc&quot;, poiDesc.getText().toString()</putExtra>
+  </profile_1:IntentResult>
 </xmi:XMI>

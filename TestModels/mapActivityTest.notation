@@ -10,7 +10,22 @@
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dc1xsFI4EeGq16zcTAufGw" source="QualifiedName">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dc1xsVI4EeGq16zcTAufGw" key="QualifiedNameDepth" value="1000"/>
     </eAnnotations>
-    <children xmi:type="notation:DecorationNode" xmi:id="_dc1xslI4EeGq16zcTAufGw" type="5029"/>
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_i5fRsFJmEeGq16zcTAufGw" source="Stereotype_Annotation">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kJMmEFJmEeGq16zcTAufGw" key="StereotypeWithQualifiedNameList" value=""/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kJMmEVJmEeGq16zcTAufGw" key="StereotypeList" value="profile::locationService,profile::MapActivity"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kJMmElJmEeGq16zcTAufGw" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kJMmE1JmEeGq16zcTAufGw" key="PropStereoDisplay" value=""/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kJMmFFJmEeGq16zcTAufGw" key="StereotypePropertyLocation" value="Compartment"/>
+    </eAnnotations>
+    <children xmi:type="notation:DecorationNode" xmi:id="_dc1xslI4EeGq16zcTAufGw" type="5029">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xfJ8wFJ1EeGJ0Z4YcDCx_g" source="Stereotype_Annotation">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PXA9UFJ2EeG5jKzHCKSoJg" key="StereotypeWithQualifiedNameList" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PXBkYFJ2EeG5jKzHCKSoJg" key="StereotypeList" value="profile::locationService"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PXBkYVJ2EeG5jKzHCKSoJg" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PXBkYlJ2EeG5jKzHCKSoJg" key="PropStereoDisplay" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PXBkY1J2EeG5jKzHCKSoJg" key="StereotypePropertyLocation" value="Compartment"/>
+      </eAnnotations>
+    </children>
     <children xmi:type="notation:BasicCompartment" xmi:id="_dc1xs1I4EeGq16zcTAufGw" type="7017">
       <children xmi:type="notation:Shape" xmi:id="_AF2kYFJKEeGq16zcTAufGw" type="3012" fontName="Lucida Grande" fontHeight="11" lineColor="0">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Exi3cFJKEeGq16zcTAufGw" source="Stereotype_Annotation">

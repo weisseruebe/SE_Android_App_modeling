@@ -64,6 +64,7 @@ public class [c.name/]Activity extends Activity {
 
 	public void end(){
 		Intent result = getIntent();
+
 		[for (p:Property | c.attribute -> select( e: Property | e.getAppliedStereotype('profile::editable')<>null))]
 	    EditText [c.name.toLowerFirst()/][p.name/] = (EditText) findViewById(R.id.[c.name.toLowerFirst()/][p.name/]);	
 		result.putExtra("[p.name/]",[c.name.toLowerFirst()/][p.name/].getText().toString());

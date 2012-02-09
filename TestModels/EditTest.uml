@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:profile="http:///schemas/profile/_8lFPsFJyEeGq16zcTAufGw/24" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/profile/_8lFPsFJyEeGq16zcTAufGw/24 ../AndroidProfile/android.profile.uml#_8lF2wFJyEeGq16zcTAufGw">
+  <uml:Model xmi:id="_vZw6YFJxEeGq16zcTAufGw" name="Model">
+    <packageImport xmi:id="_vZw6YVJxEeGq16zcTAufGw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_woNqgFJxEeGq16zcTAufGw" name="Customer">
+      <ownedAttribute xmi:id="_xgxDIFJxEeGq16zcTAufGw" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yzSa8FJxEeGq16zcTAufGw" name="surname">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <profileApplication xmi:id="_6_u38FJxEeGq16zcTAufGw">
+      <eAnnotations xmi:id="_7CTDwFJxEeGq16zcTAufGw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="../AndroidProfile/android.profile.uml#_8lF2wFJyEeGq16zcTAufGw"/>
+      </eAnnotations>
+      <appliedProfile href="../AndroidProfile/android.profile.uml#_jk3WQEHZEeGAXfaoLuzzwg"/>
+    </profileApplication>
+  </uml:Model>
+  <profile:EditActivity xmi:id="_9e9TcFJxEeGq16zcTAufGw" base_Class="_woNqgFJxEeGq16zcTAufGw"/>
+  <profile:editable xmi:id="__PLT4FJxEeGq16zcTAufGw" base_Property="_xgxDIFJxEeGq16zcTAufGw"/>
+</xmi:XMI>

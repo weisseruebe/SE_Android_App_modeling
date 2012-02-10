@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:profile="http:///schemas/profile/_YbHVcFMCEeGLpb8BKIf4yw/32" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/profile/_YbHVcFMCEeGLpb8BKIf4yw/32 ../AndroidProfile/android.profile.uml#_YbHVcVMCEeGLpb8BKIf4yw">
+  <uml:Model xmi:id="_TDAGAFNqEeGGefVNEubVFw" name="model">
+    <packagedElement xmi:type="uml:Class" xmi:id="_UbmQoFNqEeGGefVNEubVFw" name="Menu"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_vSqkQFNrEeGGefVNEubVFw" name="Button1"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_x0KQoFNrEeGGefVNEubVFw" name="pc1_menu_0" memberEnd="_x0KQoVNrEeGGefVNEubVFw _x0H0YFNrEeGGefVNEubVFw" navigableOwnedEnd="_x0KQoVNrEeGGefVNEubVFw">
+      <ownedEnd xmi:id="_x0H0YFNrEeGGefVNEubVFw" name="menu" type="_UbmQoFNqEeGGefVNEubVFw" association="_x0KQoFNrEeGGefVNEubVFw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x0H0YVNrEeGGefVNEubVFw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x0H0YlNrEeGGefVNEubVFw" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_x0KQoVNrEeGGefVNEubVFw" name="button1" type="_vSqkQFNrEeGGefVNEubVFw" aggregation="composite" association="_x0KQoFNrEeGGefVNEubVFw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x0KQolNrEeGGefVNEubVFw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x0KQo1NrEeGGefVNEubVFw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_i_GrcFNsEeGGefVNEubVFw" name="Act1">
+      <ownedAttribute xmi:id="_IWk-kFN1EeGGefVNEubVFw" name="Property0"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_mo3AYFNsEeGGefVNEubVFw" name="button1_activity_0" memberEnd="_mo3AYVNsEeGGefVNEubVFw _mo1LMFNsEeGGefVNEubVFw" navigableOwnedEnd="_mo1LMFNsEeGGefVNEubVFw">
+      <ownedEnd xmi:id="_mo3AYVNsEeGGefVNEubVFw" name="button1" type="_vSqkQFNrEeGGefVNEubVFw" association="_mo3AYFNsEeGGefVNEubVFw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mo3AYlNsEeGGefVNEubVFw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mo3AY1NsEeGGefVNEubVFw" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_mo1LMFNsEeGGefVNEubVFw" name="activity" type="_i_GrcFNsEeGGefVNEubVFw" association="_mo3AYFNsEeGGefVNEubVFw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mo1LMVNsEeGGefVNEubVFw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mo1LMlNsEeGGefVNEubVFw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_lMRLUFPUEeGMmJV8-3yJ6w" name="Button2"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_nxEDUFPUEeGMmJV8-3yJ6w" name="menu_class0_0" memberEnd="_nxEDUVPUEeGMmJV8-3yJ6w _nxBAAFPUEeGMmJV8-3yJ6w" navigableOwnedEnd="_nxBAAFPUEeGMmJV8-3yJ6w">
+      <ownedEnd xmi:id="_nxEDUVPUEeGMmJV8-3yJ6w" name="menu" type="_UbmQoFNqEeGGefVNEubVFw" association="_nxEDUFPUEeGMmJV8-3yJ6w">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nxEDUlPUEeGMmJV8-3yJ6w" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nxEDU1PUEeGMmJV8-3yJ6w" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_nxBAAFPUEeGMmJV8-3yJ6w" name="class0" type="_lMRLUFPUEeGMmJV8-3yJ6w" aggregation="composite" association="_nxEDUFPUEeGMmJV8-3yJ6w">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nxBAAVPUEeGMmJV8-3yJ6w" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nxBAAlPUEeGMmJV8-3yJ6w" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_qPaVEFPUEeGMmJV8-3yJ6w" name="Act2"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_rv4pUFPUEeGMmJV8-3yJ6w" name="button2_act2_0" memberEnd="_rv4pUVPUEeGMmJV8-3yJ6w _rv2NEFPUEeGMmJV8-3yJ6w" navigableOwnedEnd="_rv2NEFPUEeGMmJV8-3yJ6w">
+      <ownedEnd xmi:id="_rv4pUVPUEeGMmJV8-3yJ6w" name="button2" type="_lMRLUFPUEeGMmJV8-3yJ6w" association="_rv4pUFPUEeGMmJV8-3yJ6w">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rv4pUlPUEeGMmJV8-3yJ6w" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rv4pU1PUEeGMmJV8-3yJ6w" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_rv2NEFPUEeGMmJV8-3yJ6w" name="act2" type="_qPaVEFPUEeGMmJV8-3yJ6w" association="_rv4pUFPUEeGMmJV8-3yJ6w">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rv2NEVPUEeGMmJV8-3yJ6w" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rv2NElPUEeGMmJV8-3yJ6w" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <profileApplication xmi:id="_RPTrEFN7EeGGefVNEubVFw">
+      <eAnnotations xmi:id="_RQ8p0FN7EeGGefVNEubVFw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="../AndroidProfile/android.profile.uml#_YbHVcVMCEeGLpb8BKIf4yw"/>
+      </eAnnotations>
+      <appliedProfile href="../AndroidProfile/android.profile.uml#_jk3WQEHZEeGAXfaoLuzzwg"/>
+    </profileApplication>
+  </uml:Model>
+  <profile:Button xmi:id="_Soo1gFN7EeGGefVNEubVFw" base_Class="_vSqkQFNrEeGGefVNEubVFw"/>
+  <profile:Activity xmi:id="_T2dTgFN7EeGGefVNEubVFw" base_Class="_i_GrcFNsEeGGefVNEubVFw"/>
+  <profile:Button xmi:id="_x9xu8FPUEeGMmJV8-3yJ6w" base_Class="_lMRLUFPUEeGMmJV8-3yJ6w"/>
+  <profile:Activity xmi:id="_zDKpsFPUEeGMmJV8-3yJ6w" base_Class="_qPaVEFPUEeGMmJV8-3yJ6w"/>
+  <profile:Intent xmi:id="_uuiloFQ-EeGILex3f4XnrA" base_Association="_mo3AYFNsEeGGefVNEubVFw"/>
+</xmi:XMI>

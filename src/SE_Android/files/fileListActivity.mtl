@@ -24,11 +24,17 @@ public class [c.name/]Activity extends ListActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		String subFolder = getIntent().getStringExtra("folder");
-		
+		String subFolder =  "[getValue(getAppliedStereotype('profile::ListActivity'), 'folder')/]";
+		final String suffix =  "[getValue(getAppliedStereotype('profile::ListActivity'), 'suffix')/]";
 		final File rootFolder = new File(getFilesDir().getAbsolutePath()+subFolder);
-		File['[]'/]  routes = rootFolder.listFiles();
 		
+		File['[]'/]  routes = rootFolder.listFiles(new FileFilter() {
+			
+			@Override
+			public boolean accept(File pathname) {
+				return (pathname.getName().endsWith(suffix.toLowerCase()) | pathname.getName().endsWith(suffix.toUpperCase())); 
+			}
+		});
 		[c.name/]Adapter adapter = new [c.name/]Adapter(this, R.layout.[c.name/]view, routes);
 		setListAdapter(adapter);
 	}

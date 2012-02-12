@@ -30,7 +30,7 @@ public class [c.name/]Activity extends Activity {
 
 			@Override
 			public void onClick(View v) {
-				end();				
+				[checkOutgoingIntentResults(c)/]
 			}
 		});
 	}
@@ -61,7 +61,7 @@ public class [c.name/]Activity extends Activity {
 	public void end(){
 		Intent result = getIntent();
 
-		[for (p:Property | c.attribute -> select( e: Property | e.getAppliedStereotype('profile::editText')<>null))]
+		[for (p:Property | c.attribute -> select( e: Property | e.getAppliedStereotype('profile::EditText')<>null))]
 	    EditText [c.name.toLowerFirst()/][p.name/] = (EditText) findViewById(R.id.[c.name.toLowerFirst()/][p.name/]);	
 		result.putExtra("[p.name/]",[c.name.toLowerFirst()/][p.name/].getText().toString());
 		[/for]
@@ -75,6 +75,14 @@ public class [c.name/]Activity extends Activity {
 [editView(c)/]
 [/template]
 
+[comment Initialise outgoing IntentResults /]
+[template public checkOutgoingIntentResults(c : Class)]
+[let intentResultAssociations:Set(Association) = (c.getAssociations() -> select(a|((a.navigableOwnedEnd -> any(p|(p.type.name = c.name) = false) <> null)   and   (a.getAppliedStereotype('profile::IntentResult').name = 'IntentResult'))) )]
+[if intentResultAssociations -> size() > 0]
+end();
+[/if]
+[/let]
+[/template]
 
 [template public editView(c : Class)]
 [file ('res/layout/' + c.name.toLower() + 'view.xml', false)]

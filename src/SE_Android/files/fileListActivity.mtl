@@ -14,7 +14,7 @@
 */]
 [template public filelistactivity(c : Class)]
 [comment @main /]
-[file ('src/' + c._package.name + '/' + c.name + 'Activity.java', false)]
+[file ('src/' + c._package.name + '/' + c.name.toUpperFirst() + 'Activity.java', false)]
 [let folder:String = getValue(getAppliedStereotype('profile::ListActivity'), 'folder').toString()]
 [let suffix:String = getValue(getAppliedStereotype('profile::ListActivity'), 'suffix').toString()]
 
@@ -28,12 +28,12 @@ import android.view.View;
 import android.widget.ListView;
 
 /***
- * [c.name/]Activity shows all [suffix/]-Files
+ * [c.name.toUpperFirst()/]Activity shows all [suffix/]-Files
  * in the folder [folder/] and lets the user choose
  * a file. The choosen file path is returned as IntentExtra named "file"
  */
 
-public class [c.name/]Activity extends ListActivity {
+public class [c.name.toUpperFirst()/]Activity extends ListActivity {
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -49,7 +49,7 @@ public class [c.name/]Activity extends ListActivity {
 				return (pathname.getName().endsWith(suffix.toLowerCase()) | pathname.getName().endsWith(suffix.toUpperCase())); 
 			}
 		});
-		[c.name/]Adapter adapter = new [c.name/]Adapter(this, R.layout.[c.name/]view, routes);
+		[c.name.toUpperFirst()/]Adapter adapter = new [c.name.toUpperFirst()/]Adapter(this, R.layout.[c.name/]view, routes);
 		setListAdapter(adapter);
 	}
 	
@@ -72,7 +72,7 @@ public class [c.name/]Activity extends ListActivity {
  * Erzeugt den passenden Adapter für die ListActivity
 */]
 [template public filelistadapter(c : Class)]
-[file ('src/' + c._package.name + '/' + c.name + 'Adapter.java', false)]
+[file ('src/' + c._package.name + '/' + c.name.toUpperFirst() + 'Adapter.java', false)]
 package [c._package.name/];
 
 import java.io.File;
@@ -84,16 +84,16 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 /***
- * [c.name/]Adapter provides a ListAdapter that shows all files given in the files parameter
+ * [c.name.toUpperFirst()/]Adapter provides a ListAdapter that shows all files given in the files parameter
  * with their full path as subtitle
  */
 
-public class [c.name/]Adapter extends ArrayAdapter<File> {
+public class [c.name.toUpperFirst()/]Adapter extends ArrayAdapter<File> {
 	Context context;
 	int layoutID;
 	File['[]'/] files;
 	
-	public [c.name/]Adapter(Context c, int textViewResourceId, File['[]'/] files) {
+	public [c.name.toUpperFirst()/]Adapter(Context c, int textViewResourceId, File['[]'/] files) {
 		super(c, textViewResourceId, files);
 		context = c;
 		layoutID = textViewResourceId;

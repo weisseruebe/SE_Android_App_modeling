@@ -65,7 +65,7 @@ public class [c.name/]Activity extends Activity {
 	public void end(){
 		Intent result = getIntent();
 
-		[for (p:Property | c.attribute -> select( e: Property | e.getAppliedStereotype('profile::editable')<>null))]
+		[for (p:Property | c.attribute -> select( e: Property | e.getAppliedStereotype('profile::editText')<>null))]
 	    EditText [c.name.toLowerFirst()/][p.name/] = (EditText) findViewById(R.id.[c.name.toLowerFirst()/][p.name/]);	
 		result.putExtra("[p.name/]",[c.name.toLowerFirst()/][p.name/].getText().toString());
 		[/for]
@@ -97,7 +97,7 @@ public class [c.name/]Activity extends Activity {
         android:text="[c.name/]"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
-[for (p:Property | c.attribute -> select( e: Property | e.getAppliedStereotype('profile::editable')<>null))]
+[for (p:Property | c.attribute -> select( e: Property | e.getAppliedStereotype('profile::EditText')<>null))]
 	<TextView
         android:id="@+id/label[c.name.toUpperFirst()/][p.name.toUpperFirst()/]"
         android:layout_width="match_parent"
@@ -111,8 +111,7 @@ public class [c.name/]Activity extends Activity {
     </EditText>
 [/for]
 
-[comment Das sollte schoener gehen mit Query oder so "getEditableProperties"/]
-[for (p:Property | c.attribute -> select( e: Property | e.getAppliedStereotype('profile::editable') = null))]
+[for (p:Property | c.attribute -> select( e: Property | e.getAppliedStereotype('profile::TextView') <> null))]
 	<TextView
         android:id="@+id/label[c.name.toUpperFirst()/][p.name.toUpperFirst()/]"
         android:layout_width="match_parent"

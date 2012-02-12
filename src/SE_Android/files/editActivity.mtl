@@ -15,10 +15,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-/***
- * @author andreasrettig
- *
- */
 
 public class [c.name/]Activity extends Activity {
 

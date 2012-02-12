@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:profile="http:///schemas/profile/_FwEg0ELWEeGJMPMvOhQvkg/19" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/profile/_FwEg0ELWEeGJMPMvOhQvkg/19 file:/Users/andreasrettig/git/SE_Android_App_modeling/AndroidProfile/android.profile.uml#_FwEg0ULWEeGJMPMvOhQvkg">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:profile="http:///schemas/profile/_cKUDsFV2EeGtk8GiPdwpHw/36" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/profile/_cKUDsFV2EeGtk8GiPdwpHw/36 ../AndroidProfile/android.profile.uml#_cKXHAFV2EeGtk8GiPdwpHw">
   <uml:Model xmi:id="_07mgQFGKEeGkNOOhy6FStA" name="model">
     <packagedElement xmi:type="uml:Class" xmi:id="_1lyswFGKEeGkNOOhy6FStA" name="filelist"/>
-    <profileApplication xmi:id="_455h0FGKEeGkNOOhy6FStA">
-      <eAnnotations xmi:id="_46leUFGKEeGkNOOhy6FStA" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="../AndroidProfile/android.profile.uml#_FwEg0ULWEeGJMPMvOhQvkg"/>
+    <profileApplication xmi:id="_ikt7UFV2EeGtk8GiPdwpHw">
+      <eAnnotations xmi:id="_ilORoFV2EeGtk8GiPdwpHw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="../AndroidProfile/android.profile.uml#_cKXHAFV2EeGtk8GiPdwpHw"/>
       </eAnnotations>
       <appliedProfile href="../AndroidProfile/android.profile.uml#_jk3WQEHZEeGAXfaoLuzzwg"/>
     </profileApplication>
   </uml:Model>
-  <profile:ListActivity xmi:id="_7B2s0FGKEeGkNOOhy6FStA" base_Class="_1lyswFGKEeGkNOOhy6FStA"/>
+  <profile:ListActivity xmi:id="_kAShcFV2EeGtk8GiPdwpHw" base_Class="_1lyswFGKEeGkNOOhy6FStA" folder="tours" suffix="xml"/>
 </xmi:XMI>

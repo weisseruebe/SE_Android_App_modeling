@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:profile="http:///schemas/profile/_8lFPsFJyEeGq16zcTAufGw/24" xmlns:profile_1="http:///schemas/profile/_cKUDsFV2EeGtk8GiPdwpHw/36" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/profile/_8lFPsFJyEeGq16zcTAufGw/24 ../AndroidProfile/android.profile.uml#_8lF2wFJyEeGq16zcTAufGw http:///schemas/profile/_cKUDsFV2EeGtk8GiPdwpHw/36 ../AndroidProfile/android.profile.uml#_cKXHAFV2EeGtk8GiPdwpHw">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:profile="http:///schemas/profile/_8lFPsFJyEeGq16zcTAufGw/24" xmlns:profile_1="http:///schemas/profile/_cKUDsFV2EeGtk8GiPdwpHw/36" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/profile/_8lFPsFJyEeGq16zcTAufGw/24 ../AndroidProfile/android.profile.uml#_8lF2wFJyEeGq16zcTAufGw http:///schemas/profile/_cKUDsFV2EeGtk8GiPdwpHw/36 file:/Users/andreasrettig/git/SE_Android_App_modeling/AndroidProfile/android.profile.uml#_cKXHAFV2EeGtk8GiPdwpHw">
   <uml:Model xmi:id="_vZw6YFJxEeGq16zcTAufGw" name="Model">
     <packageImport xmi:id="_vZw6YVJxEeGq16zcTAufGw">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
-    <packagedElement xmi:type="uml:Class" xmi:id="_woNqgFJxEeGq16zcTAufGw" name="Customer">
+    <packagedElement xmi:type="uml:Class" xmi:id="_woNqgFJxEeGq16zcTAufGw" name="Editpoi">
       <ownedAttribute xmi:id="_xgxDIFJxEeGq16zcTAufGw" name="name">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_yzSa8FJxEeGq16zcTAufGw" name="surname">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_5EORoFWfEeGUc_suJsnYZQ" name="Class0"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_6swVsFWfEeGUc_suJsnYZQ" name="customer_class0_0" memberEnd="_6swVsVWfEeGUc_suJsnYZQ _6suggFWfEeGUc_suJsnYZQ" navigableOwnedEnd="_6suggFWfEeGUc_suJsnYZQ">
+      <ownedEnd xmi:id="_6swVsVWfEeGUc_suJsnYZQ" name="customer" type="_woNqgFJxEeGq16zcTAufGw" association="_6swVsFWfEeGUc_suJsnYZQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6swVslWfEeGUc_suJsnYZQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6swVs1WfEeGUc_suJsnYZQ" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_6suggFWfEeGUc_suJsnYZQ" name="class0" type="_5EORoFWfEeGUc_suJsnYZQ" association="_6swVsFWfEeGUc_suJsnYZQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6suggVWfEeGUc_suJsnYZQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6sugglWfEeGUc_suJsnYZQ" value="1"/>
+      </ownedEnd>
     </packagedElement>
     <profileApplication xmi:id="_6_u38FJxEeGq16zcTAufGw">
       <eAnnotations xmi:id="_7CTDwFJxEeGq16zcTAufGw" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -23,5 +34,6 @@
   <profile:editable xmi:id="__PLT4FJxEeGq16zcTAufGw" base_Property="_xgxDIFJxEeGq16zcTAufGw"/>
   <profile_1:EditActivity xmi:id="_kx-koFWYEeGUc_suJsnYZQ" base_Class="_woNqgFJxEeGq16zcTAufGw"/>
   <profile_1:EditText xmi:id="_lxp48FWYEeGUc_suJsnYZQ" base_Property="_xgxDIFJxEeGq16zcTAufGw"/>
-  <profile_1:TextView xmi:id="_mfxjMFWYEeGUc_suJsnYZQ" base_Property="_yzSa8FJxEeGq16zcTAufGw"/>
+  <profile_1:IntentResult xmi:id="_S9D34FWgEeGUc_suJsnYZQ" base_Association="_6swVsFWfEeGUc_suJsnYZQ"/>
+  <profile_1:EditText xmi:id="_yrta8FWgEeGUc_suJsnYZQ" base_Property="_yzSa8FJxEeGq16zcTAufGw"/>
 </xmi:XMI>

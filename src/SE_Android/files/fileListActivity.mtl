@@ -40,7 +40,7 @@ public class [c.name.toUpperFirst()/]Activity extends ListActivity {
 		super.onCreate(savedInstanceState);
 		String subFolder =  "[folder/]";
 		final String suffix =  "[suffix/]";
-		final File rootFolder = new File(getFilesDir().getAbsolutePath()+subFolder);
+		final File rootFolder = new File(getFilesDir().getAbsolutePath()+"/"+subFolder);
 		
 		File['[]'/]  routes = rootFolder.listFiles(new FileFilter() {
 			
